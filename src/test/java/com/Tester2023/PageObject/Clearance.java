@@ -90,39 +90,22 @@ public class Clearance extends DriverFactory {
         }
     }
 
-    //@FindBy(css = ".TiledSizePickerTilestyles__Button-lhvvuo-0.caeTLx")
     @FindBy(css = ".TiledSizePickerstyles__Box-sc-1qcyolh-3.hgNvJd")
     List<WebElement> sizes;
 
     public void sizeSelect() throws InterruptedException {
         Thread.sleep(200);
-        for(WebElement size : sizes){
+        for (WebElement size : sizes) {
             System.out.println(size.getAttribute("data-partnumber"));
-        //if (size.getAttribute("data-value").contains("true"))
-        //size.click();
-    }
-
+        }
     }
 
     @FindBy(css = ".Buttonstyles__Button-sc-42scm2-2.dEQSbW")
     WebElement addToTrolley;
 
-    public void addToTrolley(){
+    public void addToTrolley() {
         addToTrolley.click();
     }
-
-
-//@FindBy(css = ".TiledSizePickerstyles__Box-sc-1qcyolh-3.hgNvJd")
-//List<WebElement> sizes;
-//        public void sizeSelect(){
-//            for(WebElement size : sizes){
-//                System.out.println(size.getAttribute("data-value"));
-//                if (size.getAttribute("data-value").contains("11")){
-//                    size.click();
-//                 }
-//            }
-//        }
-
 }
 
 
