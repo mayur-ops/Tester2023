@@ -5,7 +5,8 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/Resource/ArgosHomePage.feature", tags = "@ShopButton")
+//@CucumberOptions(features = "src/test/Resource/ArgosHomePage.feature", tags = "@ShopButton")
+@CucumberOptions(features = "src/test/Resource/ArgosHomePage.feature", tags = "@Clearance")
 
 public class RunCuckTest {
 
