@@ -1,4 +1,4 @@
-package com.Tester2023.PageObject;
+package com.Tester2023.PageObject.ArgosPageObject;
 
 import com.Tester2023.BaseClassPackage.DriverFactory;
 import org.hamcrest.Matchers;

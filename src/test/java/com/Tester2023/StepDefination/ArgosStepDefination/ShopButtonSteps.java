@@ -1,6 +1,6 @@
-package com.Tester2023.StepDefination;
+package com.Tester2023.StepDefination.ArgosStepDefination;
 
-import com.Tester2023.PageObject.ShopButton;
+import com.Tester2023.PageObject.ArgosPageObject.ShopButton;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

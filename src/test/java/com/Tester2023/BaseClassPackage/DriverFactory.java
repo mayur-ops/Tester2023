@@ -16,12 +16,15 @@ public class DriverFactory {
     public void openBrowser(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.get("https://www.argos.co.uk/");
+        //driver.get("https://www.argos.co.uk/");
+        driver.get("https://www.lidl.co.uk/");
         driver.manage().window().maximize();
-        driver.findElement(By.id("consent_prompt_submit")).click();
+        //driver.findElement(By.id("consent_prompt_submit")).click(); //Argos Cookies
+        driver.findElement(By.id("onetrust-accept-btn-handler")).click();  // Lidl Cookies
     }
 
     public void closeBrowser(){
-        driver.quit();
+
+        //driver.quit();
     }
 }
