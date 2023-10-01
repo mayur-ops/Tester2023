@@ -12,7 +12,7 @@ Feature: Argos homepage functionality
     Then user should able to see all television related products
 
 
-    @Clearance
+  @Clearance
   Scenario: Argos clearance items
     And user able to click argos icon
     And user able to click on the clearance button
@@ -23,6 +23,6 @@ Feature: Argos homepage functionality
     And user click £10-£15 check box
     And user should able to see all between £10-£15 range products
     Then user able to click on gray denim shoes
-      And use select the size of the product
+    And use select the size of the product
     And user add to trolley
 
