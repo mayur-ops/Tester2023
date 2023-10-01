@@ -1,6 +1,6 @@
-package com.Tester2023.StepDefination;
+package com.Tester2023.StepDefination.ArgosStepDefination;
 
-import com.Tester2023.PageObject.Clearance;
+import com.Tester2023.PageObject.ArgosPageObject.Clearance;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
