@@ -35,7 +35,7 @@ public class Halloween extends DriverFactory {
         for (WebElement Pumpkin : Pumpkins) {
             System.out.println(Pumpkin.getText());
             Thread.sleep(200);
-            if (Pumpkin.getText().contains("Pumpkins")) {
+            if (Pumpkin.getText().equalsIgnoreCase("Pumpkins")) {
                 Pumpkin.click();
             }
         }
@@ -47,7 +47,8 @@ public class Halloween extends DriverFactory {
         Assert.assertEquals(ActuaUrl, "https://www.lidl.co.uk/c/halloween/s10026897");
     }
 
-    @FindBy(css = ".ATheContentPageCard__Claim")
+   // @FindBy(css = ".ATheContentPageCard__Claim")
+   @FindBy(css = ".ATheCampaign__Section.ATheCampaign__Section--10121929")
     List<WebElement> LargePumpkins;
 
     public void LargePumpkins() {

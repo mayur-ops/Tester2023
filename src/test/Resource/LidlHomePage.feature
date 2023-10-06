@@ -1,5 +1,6 @@
 Feature: Lidl Homepage features
 
+  @Halloween
   Scenario: Lidl home page features
     Given user is on Lidl home page
     And user click on the halloween button
