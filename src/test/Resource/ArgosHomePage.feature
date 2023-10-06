@@ -26,3 +26,14 @@ Feature: Argos homepage functionality
     And use select the size of the product
     And user add to trolley
 
+    @SignIn
+  Scenario Outline: Argos Account Login
+    Given user click on the Account Button
+    When user is on sign in page
+    And user provide the email "<Username>"
+    And user provide the password "<Password>"
+    Then user able to sing in successfully
+
+    Examples:
+      | Username          |  | Password  |
+      | mkp802002@aol.com |  | tester123 |
