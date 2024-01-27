@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="9.941" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Argos homepage functionality" name="Argos Technology button" time="9.78">
+<testsuite name="Cucumber" time="10.201" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Argos homepage functionality" name="Argos Technology button" time="9.998">
 <system-out><![CDATA[
 Given user is on argos home page............................................passed
 Given User click on the technology button...................................passed
