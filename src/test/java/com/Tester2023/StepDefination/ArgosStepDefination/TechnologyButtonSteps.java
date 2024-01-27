@@ -31,4 +31,9 @@ public class TechnologyButtonSteps {
     obj.checkBoxOfHP();
     obj1.getCurrentURL();
     }
+
+    @And("User select HP product")
+    public void userSelectHPProduct() {
+    obj.hpProduct();
+    }
 }
