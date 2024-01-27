@@ -1,0 +1,8 @@
+
+@Technology
+Scenario: Argos Technology button                    [90m# src/test/Resource/ArgosHomePage.feature:42[0m
+  [32mGiven [0m[32muser is on argos home page[0m                   [90m# com.Tester2023.StepDefination.ArgosStepDefination.ShopButtonSteps.user_is_on_argos_home_page()[0m
+  [32mGiven [0m[32mUser click on the technology button[0m          [90m# com.Tester2023.StepDefination.ArgosStepDefination.TechnologyButtonSteps.user_click_on_the_technology_button()[0m
+  [32mWhen [0m[32mUser click on the Printers[0m                    [90m# com.Tester2023.StepDefination.ArgosStepDefination.TechnologyButtonSteps.user_click_on_the_printers()[0m
+  [32mAnd [0m[32mUser able to see all Printer items[0m             [90m# com.Tester2023.StepDefination.ArgosStepDefination.TechnologyButtonSteps.user_able_to_see_all_printer_items()[0m
+  [32mAnd [0m[32mUser select the HP checkbox to see HP products[0m [90m# com.Tester2023.StepDefination.ArgosStepDefination.TechnologyButtonSteps.userSelectTheHPCheckboxToSeeHPProducts()[0m

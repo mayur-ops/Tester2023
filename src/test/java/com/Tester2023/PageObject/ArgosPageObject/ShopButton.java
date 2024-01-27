@@ -49,5 +49,4 @@ public class ShopButton extends DriverFactory {
         System.out.println(actualURL);
         Assert.assertThat(actualURL, Matchers.containsString("https://www.argos.co.uk/browse/technology/televisions-and-accessories/c:29955/"));
     }
-
 }
