@@ -26,7 +26,7 @@ Feature: Argos homepage functionality
     And use select the size of the product
     And user add to trolley
 
-    @SignIn @Reg
+  @SignIn @Reg
   Scenario Outline: Argos Account Login
     Given user click on the Account Button
     When user is on sign in page
@@ -38,13 +38,13 @@ Feature: Argos homepage functionality
       | Username          |  | Password  |
       | mkp802002@aol.com |  | tester123 |
 
-      @Technology @Reg
-      Scenario: Argos Technology button
-        Given User click on the technology button
-        When User click on the Printers
-        And User able to see all Printer items
-        And User select the HP checkbox to see HP products
-        And User select HP product
+  @Technology @Reg
+  Scenario: Argos Technology button
+    Given User click on the technology button
+    When User click on the Printers
+    And User able to see all Printer items
+    And User select the HP checkbox to see HP products
+    And User select HP product
 
 
 
