@@ -38,11 +38,13 @@ Feature: Argos homepage functionality
       | Username          |  | Password  |
       | mkp802002@aol.com |  | tester123 |
 
-      @Technology
+      @Technology @Reg
       Scenario: Argos Technology button
         Given User click on the technology button
         When User click on the Printers
         And User able to see all Printer items
         And User select the HP checkbox to see HP products
+        And User select HP product
+
 
 

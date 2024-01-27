@@ -58,4 +58,17 @@ public class TechnologyButton extends DriverFactory {
             }
         }
     }
+
+    @FindBy (xpath = "//div[@data-test=\"component-product-card-title\"]")
+    List<WebElement> listOfHPProducts;
+
+    public void hpProduct(){
+        for (WebElement listOfHPProduct : listOfHPProducts){
+            System.out.println(listOfHPProduct.getText());
+            if(listOfHPProduct.getText().contains("HP Plus Envy Inspire 7220e Printer & 3 Months Instant Ink")){
+                listOfHPProduct.click();
+                break;
+            }
+        }
+    }
 }

@@ -7,15 +7,15 @@ import org.junit.Assert;
 public class UtilityMethods extends DriverFactory {
 
 
-    public void titleOfThePage(){
+    public void titleOfThePage() {
         String WebPageTitle = driver.getTitle();
         System.out.println(WebPageTitle);
         Assert.assertThat(WebPageTitle, Matchers.containsString("Printers | Wireless, Laser & All In One Printers | Argos"));
     }
 
-    public void getCurrentURL(){
+    public void getCurrentURL() {
         String actualURL = driver.getCurrentUrl();
         System.out.println(actualURL);
-        Assert.assertEquals(actualURL,"https://www.argos.co.uk/browse/technology/printers/c:30088/brands:hp/");
+        Assert.assertEquals(actualURL, "https://www.argos.co.uk/browse/technology/printers/c:30088/brands:hp/");
     }
 }
