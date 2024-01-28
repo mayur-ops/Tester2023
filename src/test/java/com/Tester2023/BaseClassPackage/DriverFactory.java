@@ -11,11 +11,11 @@ import java.util.concurrent.TimeUnit;
 public class DriverFactory {
     public static WebDriver driver;
 
-    public DriverFactory (){
-        PageFactory.initElements(driver,this);
+    public DriverFactory() {
+        PageFactory.initElements(driver, this);
     }
 
-    public void openBrowser(){
+    public void openBrowser() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -26,8 +26,8 @@ public class DriverFactory {
         //driver.findElement(By.id("onetrust-accept-btn-handler")).click();  // Lidl Cookies
     }
 
-    public void closeBrowser(){
+    public void closeBrowser() {
 
-        //driver.quit();
+        driver.quit();
     }
 }

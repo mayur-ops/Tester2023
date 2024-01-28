@@ -5,16 +5,16 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
 public class Hooks {
-    
+
     public DriverFactory driverFactory = new DriverFactory();
 
     @Before
-    public void setUp(){
+    public void setUp() {
         driverFactory.openBrowser();
     }
 
     @After
-    public void tearDown(){
+    public void tearDown() {
         driverFactory.closeBrowser();
     }
 }

@@ -13,27 +13,28 @@ public class TechnologyButtonSteps {
 
     @Given("User click on the technology button")
     public void user_click_on_the_technology_button() {
-     obj.technologyButton();
+        obj.technologyButton();
     }
 
     @When("User click on the Printers")
     public void user_click_on_the_printers() {
-   obj.techProduct();
+        obj.techProduct();
 
     }
+
     @And("User able to see all Printer items")
     public void user_able_to_see_all_printer_items() {
-    obj1.titleOfThePage();
+        obj1.titleOfThePage();
     }
 
     @And("User select the HP checkbox to see HP products")
     public void userSelectTheHPCheckboxToSeeHPProducts() {
-    obj.checkBoxOfHP();
-    obj1.getCurrentURL();
+        obj.checkBoxOfHP();
+        obj1.getCurrentURL();
     }
 
     @And("User select HP product")
     public void userSelectHPProduct() {
-    obj.hpProduct();
+        obj.hpProduct();
     }
 }

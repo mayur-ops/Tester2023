@@ -43,7 +43,7 @@ public class Login extends DriverFactory {
         String actualURL = driver.getCurrentUrl();
         String actualTitle = driver.getTitle();
         System.out.println(actualTitle);
-        Assert.assertEquals(actualTitle,"Sign in | Argos");
+        Assert.assertEquals(actualTitle, "Sign in | Argos");
         System.out.println(actualURL);
         Assert.assertEquals(actualURL, "https://www.argos.co.uk/account/login?clickOrigin=header:home:account");
     }
