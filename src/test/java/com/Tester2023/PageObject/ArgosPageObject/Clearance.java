@@ -18,16 +18,19 @@ public class Clearance extends DriverFactory {
         argosLogo.click();
     }
 
-    @FindBy(xpath = "//body/div[@id='content']/div[1]/div[3]/main[1]/div[2]/div[1]/div[3]/div[1]/div[1]/a[1]/picture[1]/img[1]")
+    @FindBy(xpath = "//button[@dir=\"right\"]")
+    WebElement arrowButton;
+    @FindBy(xpath = "//*[@id=\"app-content\"]/main/div[2]/div[1]/div[1]/div/div/a[14]")
     WebElement clearanceLogo;
 
     public void clearanceLogo() {
+        arrowButton.click();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,900);");
         clearanceLogo.click();
     }
 
-    @FindBy(xpath = "//body/div[@id='content']/div[1]/div[3]/main[1]/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/a[1]")
+    @FindBy(linkText = "Clothing")
     WebElement clothingButton;
 
     public void clothingButtonn() {

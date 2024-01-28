@@ -1,9 +1,46 @@
 
-@Technology @Reg
-Scenario: Argos Technology button                    [90m# src/test/Resource/ArgosHomePage.feature:42[0m
-  [32mGiven [0m[32muser is on argos home page[0m                   [90m# com.Tester2023.StepDefination.ArgosStepDefination.ShopButtonSteps.user_is_on_argos_home_page()[0m
-  [32mGiven [0m[32mUser click on the technology button[0m          [90m# com.Tester2023.StepDefination.ArgosStepDefination.TechnologyButtonSteps.user_click_on_the_technology_button()[0m
-  [32mWhen [0m[32mUser click on the Printers[0m                    [90m# com.Tester2023.StepDefination.ArgosStepDefination.TechnologyButtonSteps.user_click_on_the_printers()[0m
-  [32mAnd [0m[32mUser able to see all Printer items[0m             [90m# com.Tester2023.StepDefination.ArgosStepDefination.TechnologyButtonSteps.user_able_to_see_all_printer_items()[0m
-  [32mAnd [0m[32mUser select the HP checkbox to see HP products[0m [90m# com.Tester2023.StepDefination.ArgosStepDefination.TechnologyButtonSteps.userSelectTheHPCheckboxToSeeHPProducts()[0m
-  [32mAnd [0m[32mUser select HP product[0m                         [90m# com.Tester2023.StepDefination.ArgosStepDefination.TechnologyButtonSteps.userSelectHPProduct()[0m
+@Clearance @Reg
+Scenario: Argos clearance items                                  [90m# src/test/Resource/ArgosHomePage.feature:16[0m
+  [32mGiven [0m[32muser is on argos home page[0m                               [90m# com.Tester2023.StepDefination.ArgosStepDefination.ShopButtonSteps.user_is_on_argos_home_page()[0m
+  [32mAnd [0m[32muser able to click argos icon[0m                              [90m# com.Tester2023.StepDefination.ArgosStepDefination.ClearanceSteps.user_able_to_click_argos_icon()[0m
+  [32mAnd [0m[32muser able to click on the clearance button[0m                 [90m# com.Tester2023.StepDefination.ArgosStepDefination.ClearanceSteps.user_able_to_click_on_the_clearance_button()[0m
+  [32mWhen [0m[32muser click on the clothing button[0m                         [90m# com.Tester2023.StepDefination.ArgosStepDefination.ClearanceSteps.user_click_on_the_clothing_button()[0m
+  [32mAnd [0m[32muser should able to see all clothing related products[0m      [90m# com.Tester2023.StepDefination.ArgosStepDefination.ClearanceSteps.user_should_able_to_see_all_clothing_related_products()[0m
+  [32mAnd [0m[32muser click on the men's sale button[0m                        [90m# com.Tester2023.StepDefination.ArgosStepDefination.ClearanceSteps.user_click_on_the_men_s_sale_button()[0m
+  [32mAnd [0m[32muser is on men's sale clothing items[0m                       [90m# com.Tester2023.StepDefination.ArgosStepDefination.ClearanceSteps.user_is_on_men_s_sale_clothing_items()[0m
+  [32mAnd [0m[32muser click £[0m[32m[1m10[0m[32m-£[0m[32m[1m15[0m[32m check box[0m                               [90m# com.Tester2023.StepDefination.ArgosStepDefination.ClearanceSteps.user_click_£_£_check_box(java.lang.Integer,java.lang.Integer)[0m
+  [32mAnd [0m[32muser should able to see all between £[0m[32m[1m10[0m[32m-£[0m[32m[1m15[0m[32m range products[0m [90m# com.Tester2023.StepDefination.ArgosStepDefination.ClearanceSteps.user_should_able_to_see_all_between_£_£_range_products(java.lang.Integer,java.lang.Integer)[0m
+  [32mThen [0m[32muser able to click on gray denim shoes[0m                    [90m# com.Tester2023.StepDefination.ArgosStepDefination.ClearanceSteps.user_able_to_click_on_gray_denim_shoes()[0m
+  [32mAnd [0m[32muse select the size of the product[0m                         [90m# com.Tester2023.StepDefination.ArgosStepDefination.ClearanceSteps.useSelectTheSizeOfTheProduct()[0m
+  [31mAnd [0m[31muser add to trolley[0m                                        [90m# com.Tester2023.StepDefination.ArgosStepDefination.ClearanceSteps.user_add_to_trolley()[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".Buttonstyles__Button-sc-42scm2-2.dEQSbW"}
+  (Session info: chrome=120.0.6099.234)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7ac5fe1e96df7ce886468f93d41849ba, findElement {using=css selector, value=.Buttonstyles__Button-sc-42scm2-2.dEQSbW}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/pq/rn2np1wx2kg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53628}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53628/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ac5fe1e96df7ce886468f93d41849ba
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.Tester2023.PageObject.ArgosPageObject.Clearance.addToTrolley(Clearance.java:110)
+	at com.Tester2023.StepDefination.ArgosStepDefination.ClearanceSteps.user_add_to_trolley(ClearanceSteps.java:65)
+	at ✽.user add to trolley(file:///Users/mayurkumarpatel/IdeaProjects/Tester2023/Tester2023/src/test/Resource/ArgosHomePage.feature:27)
+[0m
