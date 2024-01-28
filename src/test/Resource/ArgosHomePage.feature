@@ -1,18 +1,17 @@
+@Regression
 Feature: Argos homepage functionality
-
 
   Background:
     Given user is on argos home page
 
-  @ShopButton @Reg
+  @ShopButton
   Scenario: Argos home page functions
     When user hover over the Shop button
     And user can see another window open and hover over the Techanology
     And user able to click on the televisions
     Then user should able to see all television related products
 
-
-  @Clearance @Reg
+  @Clearance
   Scenario: Argos clearance items
     And user able to click argos icon
     And user able to click on the clearance button
@@ -26,7 +25,7 @@ Feature: Argos homepage functionality
     And use select the size of the product
     And user add to trolley
 
-  @SignIn @Reg
+  @SignIn
   Scenario Outline: Argos Account Login
     Given user click on the Account Button
     When user is on sign in page
@@ -38,7 +37,7 @@ Feature: Argos homepage functionality
       | Username          |  | Password  |
       | mkp802002@aol.com |  | tester123 |
 
-  @Technology @Reg
+  @Technology
   Scenario: Argos Technology button
     Given User click on the technology button
     When User click on the Printers

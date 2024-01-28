@@ -1,6 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="9.149" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Argos homepage functionality" name="Argos Technology button" time="8.938">
+<testsuite name="Cucumber" time="33.839" tests="4" skipped="0" failures="1" errors="0">
+<testcase classname="Argos homepage functionality" name="Argos home page functions" time="8.891">
+<system-out><![CDATA[
+Given user is on argos home page............................................passed
+When user hover over the Shop button........................................passed
+And user can see another window open and hover over the Techanology.........passed
+And user able to click on the televisions...................................passed
+Then user should able to see all television related products................passed
+]]></system-out>
+</testcase>
+<testcase classname="Argos homepage functionality" name="Argos clearance items" time="8.009">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;app-content&quot;]/main/div[2]/div[1]/div[1]/div/div/a[14]&quot;}
+  (Session info: chrome=120.0.6099.234)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1586e8deec8f27cb983246f94026f6c5, findElement {using=xpath, value=//*[@id=&quot;app-content&quot;]/main/div[2]/div[1]/div[1]/div/div/a[14]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/pq/rn2np1wx2kg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58052/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1586e8deec8f27cb983246f94026f6c5">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app-content"]/main/div[2]/div[1]/div[1]/div/div/a[14]"}
+  (Session info: chrome=120.0.6099.234)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1586e8deec8f27cb983246f94026f6c5, findElement {using=xpath, value=//*[@id="app-content"]/main/div[2]/div[1]/div[1]/div/div/a[14]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.234, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /var/folders/pq/rn2np1wx2kg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58052/devtoo..., se:cdpVersion: 120.0.6099.234, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1586e8deec8f27cb983246f94026f6c5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.Tester2023.PageObject.ArgosPageObject.Clearance.clearanceLogo(Clearance.java:30)
+	at com.Tester2023.StepDefination.ArgosStepDefination.ClearanceSteps.user_able_to_click_on_the_clearance_button(ClearanceSteps.java:20)
+	at ✽.user able to click on the clearance button(file:///Users/mayurkumarpatel/IdeaProjects/Tester2023/Tester2023/src/test/Resource/ArgosHomePage.feature:20)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is on argos home page............................................passed
+And user able to click argos icon...........................................passed
+And user able to click on the clearance button..............................failed
+When user click on the clothing button......................................skipped
+And user should able to see all clothing related products...................skipped
+And user click on the men's sale button.....................................skipped
+And user is on men's sale clothing items....................................skipped
+And user click £10-£15 check box............................................skipped
+And user should able to see all between £10-£15 range products..............skipped
+Then user able to click on gray denim shoes.................................skipped
+And use select the size of the product......................................skipped
+And user add to trolley.....................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Argos homepage functionality" name="Argos Account Login - Example #1.1" time="5.673">
+<system-out><![CDATA[
+Given user is on argos home page............................................passed
+Given user click on the Account Button......................................passed
+When user is on sign in page................................................passed
+And user provide the email "mkp802002@aol.com"..............................passed
+And user provide the password "tester123"...................................passed
+Then user able to sing in successfully......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Argos homepage functionality" name="Argos Technology button" time="11.015">
 <system-out><![CDATA[
 Given user is on argos home page............................................passed
 Given User click on the technology button...................................passed

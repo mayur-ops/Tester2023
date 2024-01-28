@@ -15,12 +15,12 @@ public class ShopButtonSteps {
     }
 
     @When("user hover over the Shop button")
-    public void user_hover_over_the_shop_button(){
+    public void user_hover_over_the_shop_button() {
         obj.hoverShopButton();
     }
 
     @When("user can see another window open and hover over the Techanology")
-    public void user_can_see_another_window_open_and_hover_over_the_techanology(){
+    public void user_can_see_another_window_open_and_hover_over_the_techanology() {
         obj.hoverTechnology();
     }
 
