@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 //@CucumberOptions(features = "src/test/Resource/ArgosHomePage.feature", tags = "@ShopButton")
 //@CucumberOptions(features = "src/test/Resource/ArgosHomePage.feature", tags = "@Clearance")
-@CucumberOptions(features = "src/test/Resource/ArgosHomePage.feature", tags = "@Clearance",
+@CucumberOptions(features = "src/test/Resource/ArgosHomePage.feature", tags = "@Technology",
         plugin = {"pretty", "html:target/cucumber-html-report",
                 "json:target/cucumber-json-report.json",
                 "junit:target/cucumber-xml-report.xml",
